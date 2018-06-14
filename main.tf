@@ -15,3 +15,12 @@ module "ex-pro-rais-131" {
   instancetype = "${var.instancetype}"
   applist = "${var.applist}"
 }
+
+module "ex-pro-rais-132" {
+  source = "./instance"
+  owner = "${var.owner}"
+  name  = "ex-pro-rais-132"
+  app = "database"
+  instancetype = "${var.instancetype}"
+  applist = "${var.applist}"
+}
