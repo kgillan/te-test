@@ -1,9 +1,3 @@
-module "lookup" {
-  source = "../lookup"
-  owner = "${var.owner}"
-  name = "${var.name}"
-}
-
 resource "aws_instance" "create" {
   ami           = "ami-31c7f654"
 
@@ -11,7 +5,7 @@ resource "aws_instance" "create" {
   #instance_type = "m4.large"
 
   # new self-optimizing instance type from Densify
-  instance_type = "${module.lookup.Densify-optimal-instance-type}"
+  instance_type = "${lookup(var.instancetype, var.name, lookup(var.applist, var.app, "t2.micro"))}"
 
   # tag instance with unique name for future reference
   tags {
