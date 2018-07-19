@@ -1,4 +1,4 @@
-owner = "Kevin"
+owner = "kevin"
 applist = {
   "web" = "c5.large"
   "database" = "m5.large"
@@ -40,7 +40,7 @@ densify_recommendations = {
 	rec_type = "n1-standard-1"
 	cur_type = "n1-standard-2"
 	appr_type = "all"
-	mnth_sav = "$42.50"
+	mnth_sav = "42.50"
 	p_uptime = "98.5"
 	ri_cover = "yes"
   }
