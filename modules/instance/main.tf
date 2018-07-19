@@ -25,7 +25,5 @@ resource "aws_instance" "create" {
   }
 
   # be sure not to delete other tags added by Densify
-  lifecycle {
-    ignore_changes = ["tags"]
-  }
+ 
 }
