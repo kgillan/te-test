@@ -19,5 +19,21 @@ densify_recommendations = {
 	mnth_sav = "$42.50"
 	p_uptime = "98.5"
 	ri_cover = "yes"
+  } 
+  ex-pro-rais-131 = {
+	rec_type = "m5.large"
+	cur_type = "m4.xlarge"
+	appr_type = "m5.large"
+	mnth_sav = "$42.50"
+	p_uptime = "98.5"
+	ri_cover = "yes"
+  }
+  ex-pro-rais-132 = {
+	rec_type = "t2.medium"
+	cur_type = "m4.xlarge"
+	appr_type = "t2.medium"
+	mnth_sav = "$42.50"
+	p_uptime = "98.5"
+	ri_cover = "yes"
   }
 }
