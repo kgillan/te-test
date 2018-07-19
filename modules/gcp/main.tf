@@ -15,7 +15,7 @@ resource "google_compute_instance" "create" {
     densify-optimal-instance-type = "${module.densify-lookup.Densify_optimal_instance_type}"
     densify-potential-monthly-savings = "${module.densify-lookup.Densify_potential_monthly_savings}"
     densify-predicted-uptime = "${module.densify-lookup.Densify_predicted_uptime}"
-    densify-recommend-RI-coverage = "${module.densify-lookup.Densify_recommend_RI_coverage}"
+    densify-recommend-ri-coverage = "${module.densify-lookup.Densify_recommend_RI_coverage}"
   }
   
   boot_disk {
