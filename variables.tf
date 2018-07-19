@@ -1,5 +1,5 @@
 variable "owner"{}
-variable "instancetype" {
+variable "densify_recommendations" {
   type = "map"
 }
 variable "applist" {

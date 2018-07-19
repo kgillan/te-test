@@ -1,26 +1,26 @@
 module "ex-pro-appx-120" {
-  source = "./instance"
+  source = "./modules/instance"
   owner = "${var.owner}"
   name = "ex-pro-appx-120"
   app = "web"
-  instancetype = "${var.instancetype}"
+  densify_recommendations = "${var.densify_recommendations}"
   applist = "${var.applist}"
 }
 
 module "ex-pro-rais-131" {
-  source = "./instance"
+  source = "./modules/instance"
   owner = "${var.owner}"
   name  = "ex-pro-rais-131"
   app = "database"
-  instancetype = "${var.instancetype}"
+  densify_recommendations = "${var.densify_recommendations}"
   applist = "${var.applist}"
 }
 
 module "ex-pro-rais-132" {
-  source = "./instance"
+  source = "./modules/instance"
   owner = "${var.owner}"
   name  = "ex-pro-rais-132"
   app = "database"
-  instancetype = "${var.instancetype}"
+  densify_recommendations = "${var.densify_recommendations}"
   applist = "${var.applist}"
 }

@@ -1,9 +1,23 @@
 owner = "Kevin"
-instancetype = {
-  "ex-pro-rais-131" = "c4.large"
-  "ex-pro-appx-120" = "m4.large"
-}
 applist = {
   "web" = "c5.large"
   "database" = "m5.large"
+}
+densify_recommendations = {
+  ex-pro-appx-120 = {
+	rec_type = "m4.large"
+	cur_type = "m4.xlarge"
+	appr_type = "all"
+	mnth_sav = "31.43"
+	p_uptime = "83.4"
+	ri_cover = "no"
+  }
+  ex-dev-appx-202 = {
+	rec_type = "m5.large"
+	cur_type = "m4.xlarge"
+	appr_type = "m5.large"
+	mnth_sav = "$42.50"
+	p_uptime = "98.5"
+	ri_cover = "yes"
+  }
 }
