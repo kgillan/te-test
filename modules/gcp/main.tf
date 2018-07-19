@@ -10,12 +10,12 @@ resource "google_compute_instance" "create" {
   zone         = "us-central1-a"
 
   labels = {
-	Owner = "${var.owner}"
-	Current-instance-type = "${module.densify-lookup.Current_instance_type}"
-    Densify-optimal-instance-type = "${module.densify-lookup.Densify_optimal_instance_type}"
-    Densify-potential-monthly-savings = "${module.densify-lookup.Densify_potential_monthly_savings}"
-    Densify-predicted-uptime = "${module.densify-lookup.Densify_predicted_uptime}"
-    Densify-recommend-RI-coverage = "${module.densify-lookup.Densify_recommend_RI_coverage}"
+	owner = "${var.owner}"
+	current-instance-type = "${module.densify-lookup.Current_instance_type}"
+    densify-optimal-instance-type = "${module.densify-lookup.Densify_optimal_instance_type}"
+    densify-potential-monthly-savings = "${module.densify-lookup.Densify_potential_monthly_savings}"
+    densify-predicted-uptime = "${module.densify-lookup.Densify_predicted_uptime}"
+    densify-recommend-RI-coverage = "${module.densify-lookup.Densify_recommend_RI_coverage}"
   }
   
   boot_disk {
