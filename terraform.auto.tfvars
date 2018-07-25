@@ -33,7 +33,7 @@ densify_recommendations = {
 	ri_cover = "yes"
   } 
   ex-dev-rais-132 = {
-	rec_type = "n1-standard-16"
+	rec_type = "n1-standard-1"
 	cur_type = "n1-standard-2"
 	appr_type = "all"
 	mnth_sav = "42.50"
