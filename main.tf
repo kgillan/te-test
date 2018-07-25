@@ -4,7 +4,7 @@ module "ex-pro-appx-120" {
   name = "ex-pro-appx-120"
   app = "web"
   densify_recommendations = "${var.densify_recommendations}"
-  applist = "${var.applist}"
+  densify_default = "${var.densify_default}"
 }
 
 module "ex-pro-rais-131" {
@@ -13,7 +13,7 @@ module "ex-pro-rais-131" {
   name  = "ex-pro-rais-131"
   app = "database"
   densify_recommendations = "${var.densify_recommendations}"
-  applist = "${var.applist}"
+  densify_default = "${var.densify_default}"
 }
 
 module "ex-pro-rais-132" {
@@ -22,7 +22,7 @@ module "ex-pro-rais-132" {
   name  = "ex-pro-rais-132"
   app = "database"
   densify_recommendations = "${var.densify_recommendations}"
-  applist = "${var.applist}"
+  densify_default = "${var.densify_default}"
 }
 
 module "ex-dev-rais-132" {
@@ -31,7 +31,7 @@ module "ex-dev-rais-132" {
   name  = "ex-dev-rais-132"
   app = "database"
   densify_recommendations = "${var.densify_recommendations}"
-  applist = "${var.applist}"
+  densify_default = "${var.densify_default}"
 }
 
 resource "google_compute_instance" "create" {

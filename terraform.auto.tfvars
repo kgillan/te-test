@@ -1,8 +1,4 @@
 owner = "kevin"
-applist = {
-  "web" = "c5.large"
-  "database" = "m5.large"
-}
 densify_recommendations = {
   ex-pro-appx-120 = {
 	rec_type = "m4.large"
