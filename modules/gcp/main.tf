@@ -1,6 +1,6 @@
 module "densify-recommendations" {
-  source  = "app.terraform.io/Densify/densify-recommendations/null"
-  version = "0.0.1"
+  source  = "app.terraform.io/Densify/densify/null"
+  version = "1.0.0"
   densify_recommendations = "${var.densify_recommendations}"
   densify_terraform_id = "${var.name}"
   densify_default = "${var.densify_default}"
