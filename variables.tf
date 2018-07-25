@@ -5,3 +5,6 @@ variable "densify_recommendations" {
 variable "applist" {
   type = "map"
 }
+variable "densify_default"{
+  type = "map"
+}
