@@ -33,31 +33,31 @@ module "ex-dev-rais-132" {
   densify_recommendations = "${var.densify_recommendations}"
   densify_default = "${var.densify_default}"
 }
-
-resource "google_compute_instance" "create" {
-  name         = "test2"
-  machine_type = "n1-standard-1"
-  zone         = "us-central1-a"
-
-  labels = {
-	owner = "${var.owner}"
-  }
-  
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-8"
-    }
-  }
-
-  network_interface {
-    network = "default"
-
-    access_config {
-      // Ephemeral IP
-    }
-  }
-
-  service_account {
-    scopes = ["userinfo-email", "compute-ro", "storage-ro"]
-  }
-}
+#
+#resource "google_compute_instance" "create" {
+#  name         = "test2"
+#  machine_type = "n1-standard-1"
+#  zone         = "us-central1-a"
+#
+#  labels = {
+#	owner = "${var.owner}"
+#  }
+#  
+#  boot_disk {
+#    initialize_params {
+#      image = "debian-cloud/debian-8"
+#    }
+#  }
+#
+#  network_interface {
+#    network = "default"
+#
+#    access_config {
+#      // Ephemeral IP
+#    }
+#  }
+#
+#  service_account {
+#    scopes = ["userinfo-email", "compute-ro", "storage-ro"]
+#  }
+#}

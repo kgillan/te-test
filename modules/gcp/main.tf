@@ -10,15 +10,15 @@ module "densify" {
 
 resource "google_compute_instance" "create" {
   name         = "${var.name}"
-  machine_type = "${module.densify-recommendations.instance_type}"
+  machine_type = "${module.densify.instance_type}"
   zone         = "us-central1-a"
 
   labels = {
 	owner = "${var.owner}"
 	owner = "${var.owner}"
-	current-instance-type = "${module.densify-recommendations.Current_instance_type}"
-    densify-optimal-instance-type = "${module.densify-recommendations.Densify_optimal_instance_type}"
-    densify-recommend-ri-coverage = "${module.densify-recommendations.Densify_recommend_RI_coverage}"
+	current-instance-type = "${module.densify.Current_instance_type}"
+    densify-optimal-instance-type = "${module.densify.Densify_optimal_instance_type}"
+    densify-recommend-ri-coverage = "${module.densify.Densify_recommend_RI_coverage}"
   }
   
   boot_disk {

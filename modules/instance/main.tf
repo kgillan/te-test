@@ -14,17 +14,17 @@ resource "aws_instance" "create" {
   #instance_type = "m4.large"
 
   # new self-optimizing instance type from Densify
-  instance_type = "${module.densify-recommendations.instance_type}"
+  instance_type = "${module.densify.instance_type}"
 
   # tag instance with unique name for future reference
   tags {
     Name = "${var.name}"
     Owner = "${var.owner}"
-	Current-instance-type = "${module.densify-recommendations.Current_instance_type}"
-    Densify-optimal-instance-type = "${module.densify-recommendations.Densify_optimal_instance_type}"
-    Densify-potential-monthly-savings = "${module.densify-recommendations.Densify_potential_monthly_savings}"
-    Densify-predicted-uptime = "${module.densify-recommendations.Densify_predicted_uptime}"
-    Densify-recommend-RI-coverage = "${module.densify-recommendations.Densify_recommend_RI_coverage}"
+	Current-instance-type = "${module.densify.Current_instance_type}"
+    Densify-optimal-instance-type = "${module.densify.Densify_optimal_instance_type}"
+    Densify-potential-monthly-savings = "${module.densify.Densify_potential_monthly_savings}"
+    Densify-predicted-uptime = "${module.densify.Densify_predicted_uptime}"
+    Densify-recommend-RI-coverage = "${module.densify.Densify_recommend_RI_coverage}"
   }
 
   # be sure not to delete other tags added by Densify
