@@ -19,6 +19,7 @@ resource "google_compute_instance" "create" {
 	current-instance-type = "${module.densify.Current_instance_type}"
     densify-optimal-instance-type = "${module.densify.Densify_optimal_instance_type}"
     densify-recommend-ri-coverage = "${module.densify.Densify_recommend_RI_coverage}"
+	Densify-Terraform-ID = "${var.name}"
   }
   
   boot_disk {

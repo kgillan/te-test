@@ -25,6 +25,7 @@ resource "aws_instance" "create" {
     Densify-potential-monthly-savings = "${module.densify.Densify_potential_monthly_savings}"
     Densify-predicted-uptime = "${module.densify.Densify_predicted_uptime}"
     Densify-recommend-RI-coverage = "${module.densify.Densify_recommend_RI_coverage}"
+	Densify-Terraform-ID = "${var.name}"
   }
 
   # be sure not to delete other tags added by Densify
