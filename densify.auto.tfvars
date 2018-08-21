@@ -5,7 +5,7 @@ densify_recommendations = {
     appr_type = "na"
     mnth_sav = "0"
     p_uptime = "32.55"
-    ri_cover = "No"
+    ri_cover = "no"
   }
   ex-pro-appx-120 = {
     rec_type = "m4.large"
@@ -13,7 +13,7 @@ densify_recommendations = {
     appr_type = "na"
     mnth_sav = "26.6"
     p_uptime = "94.32"
-    ri_cover = "Yes"
+    ri_cover = "yes"
   }
   ex-pro-rais-132 = {
     rec_type = "t2.medium"
@@ -21,7 +21,7 @@ densify_recommendations = {
     appr_type = "na"
     mnth_sav = "12.37"
     p_uptime = "94.32"
-    ri_cover = "Yes"
+    ri_cover = "yes"
   }
   ex-pro-rais-131 = {
     rec_type = "c4.large"
@@ -29,6 +29,6 @@ densify_recommendations = {
     appr_type = "all"
     mnth_sav = "32.1"
     p_uptime = "94.32"
-    ri_cover = "Yes"
+    ri_cover = "yes"
   }
 }
