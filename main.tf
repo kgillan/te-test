@@ -25,14 +25,14 @@ module "ex-pro-rais-132" {
   densify_default = "${var.densify_default}"
 }
 
-module "ex-dev-rais-132" {
-  source = "./modules/gcp"
-  owner = "${var.owner}"
-  name  = "ex-dev-rais-132"
-  app = "database"
-  densify_recommendations = "${var.densify_recommendations}"
-  densify_default = "${var.densify_default}"
-}
+#module "ex-dev-rais-132" {
+#  source = "./modules/gcp"
+#  owner = "${var.owner}"
+#  name  = "ex-dev-rais-132"
+#  app = "database"
+#  densify_recommendations = "${var.densify_recommendations}"
+#  densify_default = "${var.densify_default}"
+#}
 #
 #resource "google_compute_instance" "create" {
 #  name         = "test2"
