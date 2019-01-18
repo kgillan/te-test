@@ -15,7 +15,6 @@ resource "google_compute_instance" "create" {
 
   labels = {
 	owner = "${var.owner}"
-	owner = "${var.owner}"
 	current-instance-type = "${module.densify.Current_instance_type}"
     densify-optimal-instance-type = "${module.densify.Densify_optimal_instance_type}"
     densify-recommend-ri-coverage = "${module.densify.Densify_recommend_RI_coverage}"
@@ -24,7 +23,7 @@ resource "google_compute_instance" "create" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-8"
+      image = "debian-cloud/debian-9"
     }
   }
 

@@ -7,10 +7,18 @@ densify_recommendations = {
     p_uptime = "32.55"
     ri_cover = "no"
   }
+  ex-dev-rais-134 = {
+    rec_type = "n1-standard-1"
+    cur_type = "n1-standard-2"
+    appr_type = "all"
+    mnth_sav = "0"
+    p_uptime = "32.55"
+    ri_cover = "no"
+  }
   ex-pro-appx-120 = {
     rec_type = "m4.large"
-    cur_type = "m4.large"
-    appr_type = "na"
+    cur_type = "m4.xlarge"
+    appr_type = "nr"
     mnth_sav = "26.6"
     p_uptime = "94.32"
     ri_cover = "yes"

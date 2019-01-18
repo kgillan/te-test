@@ -1,11 +1,12 @@
 module "densify" {
   source  = "kgillan/densify/null"
-  version = "1.0.1"
+  version = "1.0.4"
 
   # insert the 3 required variables here
   densify_recommendations = "${var.densify_recommendations}"
   densify_terraform_id = "${var.name}"
   densify_default = "${var.densify_default}"
+  densify_approval = "Approved"
 }
 resource "aws_instance" "create" {
   ami           = "ami-31c7f654"
